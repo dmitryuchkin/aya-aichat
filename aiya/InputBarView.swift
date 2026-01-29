@@ -19,13 +19,13 @@ struct InputBarView: View {
                 Image(systemName: "arrow.up.circle.fill")
                     .font(.title)
             }
+            Button(action: model.senderMessagee) {
+                Image(systemName: "arrow.up.circle.fill")
+                    .font(.title)
+            }
             .padding(.trailing, 5)
         }
         .padding(.vertical, 8)
         .background(inputGrey)
     }
-    func sendMessage() {
-        print("Sending: \(model.text)")
-        model.text = ""
-        }
 }

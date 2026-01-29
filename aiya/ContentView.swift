@@ -12,6 +12,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ChatWindowView(model: vm)
+            Spacer()
             InputBarView(model: vm)
         }
     }

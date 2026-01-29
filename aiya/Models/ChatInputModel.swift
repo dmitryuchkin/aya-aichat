@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import UIKit
 
 struct ChatMessage: Identifiable {
     let id = UUID()
@@ -21,6 +22,25 @@ class ChatInputModel: ObservableObject {
     
     func senderMessage() {
         let message = ChatMessage(text: text, date: Date(), isFromMe: true)
+        if message.text.isEmpty {
+            return
+        }
+        messages.append(message)
+        text = ""
+    }
+    func deleteMessage(_ messageToDelete: ChatMessage) {
+        messages.removeAll {
+            $0.id == messageToDelete.id
+        }
+    }
+    func copyMessage(_ messageToCopy: ChatMessage) {
+        UIPasteboard.general.string = messageToCopy.text
+    }
+    func senderMessagee() {
+        let message = ChatMessage(text: "huiasdljhagdashglkafjlaskjdlakjdasdasdasdasdasjfhaskjfhasjkdhaskjdh asdjashdjahsdjhasdjhas dhadjhasjdhasd", date: Date(), isFromMe: false)
+        if message.text.isEmpty {
+            return
+        }
         messages.append(message)
         text = ""
     }

@@ -6,12 +6,7 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		2536A6B92F23887000D1F119 /* .gitignore in Sources */ = {isa = PBXBuildFile; fileRef = 2536A6B72F23886A00D1F119 /* .gitignore */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		2536A6B72F23886A00D1F119 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		25838EE02F16681700E2779F /* aiya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aiya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -37,7 +32,6 @@
 		25838ED72F16681700E2779F = {
 			isa = PBXGroup;
 			children = (
-				2536A6B72F23886A00D1F119 /* .gitignore */,
 				25838EE22F16681700E2779F /* aiya */,
 				25838EE12F16681700E2779F /* Products */,
 			);
@@ -125,7 +119,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2536A6B92F23887000D1F119 /* .gitignore in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
