@@ -53,6 +53,13 @@ struct ChatWindowView: View {
                                     .foregroundColor(.red)
                             }
                             .frame(alignment: .leading)
+                            ShareLink(
+                                item: URL(string: "https://www.aya-chat.com")!,
+                                subject: Text(message.text),
+                            )
+                            .labelStyle(.iconOnly)
+                            .font(.system(size: 12))
+                            .foregroundColor(.red)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 10)
